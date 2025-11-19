@@ -28,7 +28,7 @@ pipeline {
                 
 
                 // Créer un tag avec un format de type V-2.<build_number>
-                def tagName = "V-2.${BUILD_NUMBER}"
+                def tagName = "V-3.${BUILD_NUMBER}"
 
                 // Récupérer les informations du credential Git dans Jenkins
                 withCredentials([usernamePassword(credentialsId: "${GIT_CREDENTIALS}", usernameVariable: 'GIT_USER', passwordVariable: 'GIT_TOKEN')]) {
